@@ -24,16 +24,56 @@ Asistente SQL en **Python + Flet** que interpreta consultas SQL convirtiéndolas
 
 ---
 
-## 📸 Capturas (opcional)
+## 📸 Captura (Formatear e interpretar consulta SQL)
 
-> *(![image](https://github.com/user-attachments/assets/b5ae1ff9-3394-4f11-93b7-5e5295fc0c47))*
-> *(Agrega aquí imágenes o gifs mostrando la app cargando un Excel o interpretando una consulta)*
+> *![image](https://github.com/user-attachments/assets/b5ae1ff9-3394-4f11-93b7-5e5295fc0c47))*
+
+## 📸 Captura (Generador de insert SQL con datos excel)
+> *![image](https://github.com/user-attachments/assets/252faf50-5b44-406f-b8d9-8bbb614cf743)
+*
 
 ---
 
-## ▶️ Cómo ejecutar
+## ▶️ Cómo ejecutar y utilizar la aplicación
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/asistente-sql-inteligente.git
-   cd asistente-sql-inteligente
+La interfaz gráfica ha sido diseñada para ser intuitiva y fácil de usar, adaptándose a las necesidades tanto de usuarios técnicos como no técnicos.
+
+Al iniciar la aplicación, verás dos opciones principales en la parte superior de la pantalla:
+
+### 1. 🛠 **Formateador SQL**
+
+Esta sección permite pegar una consulta SQL desordenada o difícil de leer, y realizar varias acciones:
+
+- 🧾 **Caja de entrada**: ingresa aquí tu consulta SQL.
+- 🔘 **Botones disponibles**:
+  - `Formatear SQL`: mejora la estructura y legibilidad de la consulta.
+  - `Interpretar SQL`: muestra una explicación en lenguaje natural de la consulta.
+  - `Copiar SQL`: copia el resultado formateado al portapapeles.
+  - `Exportar a .txt`: guarda el SQL formateado en un archivo de texto.
+  - `Limpiar todo`: borra todos los campos.
+
+- 📄 **Resultados**:
+  - Una caja de texto mostrará el SQL ya formateado.
+  - Otra caja mostrará la interpretación en lenguaje natural.
+
+---
+
+### 2. 📥 **Generador de INSERT**
+
+Esta sección te permite cargar un archivo Excel y generar automáticamente los comandos `INSERT INTO` para una tabla:
+
+- 🧾 **Campo "Nombre de tabla"**: escribe el nombre de la tabla destino del `INSERT`.
+- 🔘 **Botones disponibles**:
+  - `Subir archivo`: selecciona el archivo Excel a procesar.
+  - `Guardar INSERT`: guarda el script generado en un archivo.
+  - `Copiar INSERT`: copia el código generado al portapapeles.
+  - `Limpiar todo`: limpia campos y resultados.
+
+- 📋 **Resultados**:
+  - Vista previa de la tabla cargada (campos y registros).
+  - Caja de texto con el script `INSERT` completo generado automáticamente.
+
+---
+
+Esta estructura te permite cubrir de forma eficiente los dos flujos principales del sistema, facilitando el trabajo con SQL para cualquier perfil de usuario.
+
